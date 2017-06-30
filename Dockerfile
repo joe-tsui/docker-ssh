@@ -28,5 +28,6 @@ RUN \
     sed -i -r 's/.?PermitRootLogin.+/PermitRootLogin yes/' /etc/ssh/sshd_config
 
 COPY container-files /
+COPY zpr /usr/sbin/zpr
 
 EXPOSE 22
